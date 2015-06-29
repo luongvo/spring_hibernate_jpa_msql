@@ -4,13 +4,13 @@ Navicat MySQL Data Transfer
 Source Server         : localhost
 Source Server Version : 50617
 Source Host           : localhost:3306
-Source Database       : spring-full-demo
+Source Database       : spring_hibernate_jpa_msql
 
 Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2015-06-29 13:05:04
+Date: 2015-06-29 13:17:43
 */
 
 SET FOREIGN_KEY_CHECKS=0;
