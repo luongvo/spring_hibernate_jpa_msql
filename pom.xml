@@ -2,10 +2,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.example</groupId>
-	<artifactId>spring_full_demo</artifactId>
+	<artifactId>spring_hibernate_jpa_msql</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring_full_demo Maven Webapp</name>
+	<name>spring_hibernate_jpa_msql Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -99,6 +99,6 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>spring_full_demo</finalName>
+		<finalName>spring_hibernate_jpa_msql</finalName>
 	</build>
 </project>
