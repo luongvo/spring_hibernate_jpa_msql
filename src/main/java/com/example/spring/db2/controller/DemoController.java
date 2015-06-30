@@ -1,4 +1,4 @@
-package com.example.spring.demo.controller;
+package com.example.spring.db2.controller;
 
 import java.util.List;
 
@@ -8,8 +8,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.example.spring.demo.domain.Student;
-import com.example.spring.demo.service.interfaces.IStudentService;
+import com.example.spring.db2.domain.Student;
+import com.example.spring.db2.service.interfaces.IStudentService;
 
 @Controller
 public class DemoController {
@@ -21,7 +21,7 @@ public class DemoController {
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String index() {
-		List<Student> students = studentService.findByAgeGreaterThan(23);
+		List<Student> students = studentService.findByAgeLessThan(24);
 
 		LOGGER.info("Have " + students.size() + " student(s)");
 		for (Student s : students) {

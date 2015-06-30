@@ -1,13 +1,13 @@
-package com.example.spring.demo.service.impl;
+package com.example.spring.db2.service.impl;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.spring.demo.domain.Student;
-import com.example.spring.demo.repository.IStudentRepository;
-import com.example.spring.demo.service.interfaces.IStudentService;
+import com.example.spring.db2.domain.Student;
+import com.example.spring.db2.repository.IStudentRepository;
+import com.example.spring.db2.service.interfaces.IStudentService;
 
 @Service
 public class StudentService implements IStudentService {
@@ -33,6 +33,10 @@ public class StudentService implements IStudentService {
 
 	public List<Student> findByAgeGreaterThan(int age) {
 		return studentRepository.findByAgeGreaterThan(age);
+	}
+
+	public List<Student> findByAgeLessThan(int age) {
+		return studentRepository.findByAgeLessThan(age);
 	}
 
 }

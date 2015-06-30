@@ -15,7 +15,7 @@
 
 	<context:property-placeholder location="classpath:application.properties" />
 	<!-- Enable Jpa Repositories -->
-	<jpa:repositories base-package="com.example.spring.demo.repository" />
+	<jpa:repositories base-package="com.example.spring.db2.repository" />
 
 	<!-- Bean post-processor for JPA annotations -->
 	<beans:bean
@@ -31,7 +31,7 @@
 	<!-- Entity Manager Factory -->
 	<beans:bean id="eMF"
 		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
-		p:dataSource-ref="dataSource" p:packagesToScan="com.example.spring.demo.domain">
+		p:dataSource-ref="dataSource" p:packagesToScan="com.example.spring.db2.domain">
 		<beans:property name="jpaVendorAdapter">
 			<beans:bean id="jpaAdapter"
 				class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"

@@ -1,4 +1,4 @@
-package com.example.spring.demo.domain;
+package com.example.spring.db2.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

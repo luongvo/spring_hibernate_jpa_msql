@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.example</groupId>
-	<artifactId>spring_hibernate_jpa_msql</artifactId>
+	<groupId>com.example.spring.db2</groupId>
+	<artifactId>spring_hibernate_jpa_db2</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring_hibernate_jpa_msql Maven Webapp</name>
+	<name>spring_hibernate_jpa_db2 Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -53,6 +53,7 @@
 			</exclusions>
 		</dependency>
 
+		<!-- JPA -->
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-jpa</artifactId>
@@ -76,12 +77,12 @@
 			<artifactId>hibernate-entitymanager</artifactId>
 			<version>${hibernate.version}</version>
 		</dependency>
-		
-		<!-- MySQL -->
+
+		<!-- DB2 -->
 		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>${mysql.connector.version}</version>
+			<groupId>com.ibm.db2</groupId>
+			<artifactId>db2jcc</artifactId>
+			<version>3.66.46</version>
 		</dependency>
 
 		<!-- Log -->
@@ -99,6 +100,6 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>spring_hibernate_jpa_msql</finalName>
+		<finalName>spring_hibernate_jpa_db2</finalName>
 	</build>
 </project>

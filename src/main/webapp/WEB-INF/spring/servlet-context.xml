@@ -16,7 +16,7 @@
 	<!-- Process annotations on registered beans like @Autowired... -->
 	<context:annotation-config />
 
-	<context:component-scan base-package="com.example.spring.demo" />
+	<context:component-scan base-package="com.example.spring.db2" />
 
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources 
 		in the /WEB-INF/views directory -->

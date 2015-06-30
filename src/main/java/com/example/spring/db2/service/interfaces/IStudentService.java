@@ -1,8 +1,8 @@
-package com.example.spring.demo.service.interfaces;
+package com.example.spring.db2.service.interfaces;
 
 import java.util.List;
 
-import com.example.spring.demo.domain.Student;
+import com.example.spring.db2.domain.Student;
 
 public interface IStudentService {
 	void add(Student student);
@@ -14,4 +14,6 @@ public interface IStudentService {
 	List<Student> findAll();
 
 	List<Student> findByAgeGreaterThan(int age);
+	
+	List<Student> findByAgeLessThan(int age);
 }
