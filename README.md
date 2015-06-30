@@ -1,4 +1,4 @@
-# spring_hibernate_jpa_msql
+# spring_hibernate_jpa_mysql
 
 HOW TO INSTALL
 
